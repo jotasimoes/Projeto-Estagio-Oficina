@@ -1,0 +1,12 @@
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\bin\Debug\net6.0\OficinaV2AL.deps.json
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\bin\Debug\net6.0\OficinaV2AL.dll
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\bin\Debug\net6.0\OficinaV2AL.pdb
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\obj\Debug\net6.0\OficinaV2AL.csproj.AssemblyReference.cache
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\obj\Debug\net6.0\OficinaV2AL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\obj\Debug\net6.0\OficinaV2AL.AssemblyInfoInputs.cache
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\obj\Debug\net6.0\OficinaV2AL.AssemblyInfo.cs
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\obj\Debug\net6.0\OficinaV2AL.csproj.CoreCompileInputs.cache
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\obj\Debug\net6.0\OficinaV2AL.dll
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\obj\Debug\net6.0\refint\OficinaV2AL.dll
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\obj\Debug\net6.0\OficinaV2AL.pdb
+C:\Users\RCSOFT\source\repos\OficinaV2\OficinaV2AL\obj\Debug\net6.0\ref\OficinaV2AL.dll

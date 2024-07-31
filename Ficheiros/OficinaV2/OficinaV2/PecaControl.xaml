@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="OficinaV2.PecaControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OficinaV2"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+   <Grid>
+      
+         <ItemsControl x:Name="PecasItemsControl" ItemsSource="{Binding}" Grid.Column="1" HorizontalAlignment="Center" >
+            <ItemsControl.ItemTemplate>
+               <DataTemplate>
+               <Border Margin="0 0 0 2" Background="#EEE" MouseLeftButtonDown="OnRowClick" >
+                     <Grid>
+                        <Grid.ColumnDefinitions>
+                           <ColumnDefinition Width="40" />
+                           <ColumnDefinition Width="170"/>
+                           <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Background="#7FB3D5">
+                           <TextBlock Text="{Binding Id_peca}"  Grid.Column="0"  Width="30" Padding="7" Foreground="White"  TextAlignment="Center" />
+                        </Border>
+                        <TextBlock Text="{Binding Descricao_peca}" Grid.Column="1" TextAlignment="Left" Padding="7" />
+                        <TextBlock Text="{Binding Preco_peca, StringFormat={}{0}€}" Grid.Column="2" Padding="7" TextAlignment="Right"/>
+                     </Grid>
+                  </Border>
+               </DataTemplate>
+            </ItemsControl.ItemTemplate>
+         </ItemsControl>
+      
+        
+   </Grid>
+
+</UserControl>

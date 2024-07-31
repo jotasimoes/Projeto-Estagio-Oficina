@@ -1,0 +1,40 @@
+﻿<Window x:Class="OficinaV2.ReparacoesListagem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"  
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OficinaV2"
+        mc:Ignorable="d"
+        Title="ReparacoesListagem" Height="550" Width="900"
+        Loaded="Window_Loaded">
+
+   
+   <Grid>
+      <dxg:GridControl x:Name="ReparacoesGrid" >
+         <dxg:GridColumn FieldName="Data_reparacao" Header="Data"/>
+         <dxg:GridColumn FieldName="Matricula" Header="Matrícula"/>
+         <dxg:GridColumn FieldName="Marca" Header="Marca"/>
+         <dxg:GridColumn FieldName="Cor" Header="Cor"/>
+         <dxg:GridColumn FieldName="Estado" Header="Estado"/>
+
+         <dxg:GridControl.DetailDescriptor>
+            <dxg:DataControlDetailDescriptor x:Name="PecasDetail" ItemsSourceBinding="{Binding listapecas}">
+                  <dxg:GridControl x:Name="PecasReparacoesGrid" ItemsSource="{Binding listapecas}" >
+                  <dxg:GridColumn FieldName="PecaComDescricao" Header="Peça"/>
+                     <dxg:GridColumn FieldName="Quantidade_pecas_reparacoes" Header="Quantidade"/>
+                  </dxg:GridControl>
+            </dxg:DataControlDetailDescriptor>
+         </dxg:GridControl.DetailDescriptor>
+
+         <dxg:GridControl.View>
+            <dxg:TableView x:Name="Vista" AllowEditing="False" AutoWidth="True" HorizontalAlignment="Center" Width="auto">
+            </dxg:TableView>
+         </dxg:GridControl.View>
+      </dxg:GridControl>
+   </Grid>
+</Window>
